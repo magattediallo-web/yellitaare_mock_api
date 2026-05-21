@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "code": 200,
+    "message": "L'operation de recharge s'est bien deroulee.",
+    "data": [
+        {
+            "refPaiement": "REF-CREDIT-TEST-001",
+            "idSession": "SESSION-CREDIT-TEST-001",
+            "numeroTransaction": "OPE-ROOT-2026-5-10",
+            "dateTransaction": "20/05/2026 18:30:15",
+            "numeroCarte": "CYN-2026-9988",
+            "soldeOnline": 75000.0,
+            "typeOperation": "WAVE"
+        }
+    ]
+}
