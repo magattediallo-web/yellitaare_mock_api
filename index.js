@@ -1424,7 +1424,7 @@ app.post('/api/v1/gw-biller/debit-card', (req, res) => {
                 "numeroCarte": "CYN-2026-9988",
                 "montant": 5000.0,
                 "soldeAvant": 50000.0,
-                "soldeOnline": 45000.0,
+                "soldeOnline": 110000.0,
                 "typeOperation": "RETRAIT"
             }
         ]
