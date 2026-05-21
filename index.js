@@ -1411,6 +1411,26 @@ app.post('/api/v1/gw-biller/credit-card', (req, res) => {
     });
 });
 
+app.post('/api/v1/gw-biller/debit-card', (req, res) => {
+    res.json({
+        "success": true,
+        "code": 200,
+        "message": "Debit effectue avec succes.",
+        "data": [
+            {
+                "idSession": "SESSION-DEBIT-TEST-001",
+                "numeroTransaction": "OPE-ROOT-2026-5-11",
+                "dateTransaction": "20/05/2026 18:35:42",
+                "numeroCarte": "CYN-2026-9988",
+                "montant": 5000.0,
+                "soldeAvant": 50000.0,
+                "soldeOnline": 45000.0,
+                "typeOperation": "RETRAIT"
+            }
+        ]
+    });
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
