@@ -1431,6 +1431,24 @@ app.post('/api/v1/gw-biller/debit-card', (req, res) => {
     });
 });
 
+app.post('/api/v1/gw-biller/retrait-bordereau', (req, res) => {
+    res.json({
+        "success": true,
+        "code": 200,
+        "message": "Debit effectue avec succes.",
+        "data": [
+            {
+                "statut": "SUCCESS",
+                "numeroTransaction": "RET-20260523-0001",
+                "montant": 5000.0,
+                "nouveauSoldeBordereau": 15000.0,
+                "numeroBordereau": "BORD-001",
+                "dateRetrait": "2026-05-23 18:45:00"
+            }
+        ]
+    });
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
